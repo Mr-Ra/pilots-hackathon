@@ -1,0 +1,139 @@
+/* Cabecera del chatbot */
+.chatbot-header {
+    display: flex;
+    flex-direction: column;  /* Apilar el título y el botón en una columna */
+    align-items: center;     /* Centrar los elementos horizontalmente */
+    justify-content: center; /* Centrar los elementos verticalmente */
+    margin-bottom: 10px;     /* Reducir el espacio debajo del encabezado */
+  }
+  
+  .chatbot-header h2 {
+    margin: 0;               /* Eliminar márgenes automáticos del título */
+    font-size: 24px;         /* Ajustar el tamaño del texto */
+    text-align: center;      /* Asegurarse de que el título esté centrado */
+  }
+  
+  .microphone-btn {
+    margin-top: 5px;         /* Reducir espacio entre el título y el botón */
+    padding: 10px 20px;      /* Ajustar el tamaño del botón si es necesario */
+  }
+  
+  /* Cuerpo del chatbot: área de mensajes */
+  .chatbot-body {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    overflow-y: auto;
+    height: 100%;
+    padding: 15px 20px;
+    max-width: 800px; /* Ajusta el tamaño del contenido */
+    margin: 0 auto; /* Centra el contenido */
+  }
+  
+  /* Estilo para los mensajes de usuario y bot */
+  .message {
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #fff;
+    max-width: 80%;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+  }
+  
+  .user-message {
+    background-color: #007BFF;
+    align-self: flex-end;
+  }
+  
+  .bot-message {
+    background-color: #4CAF50;
+    align-self: flex-start;
+  }
+  
+  /* Sugerencias de consulta */
+  .suggestions-box {
+    margin-top: 25px;
+  }
+  
+  .suggestions-box ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .suggestions-box li {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  
+  .suggestions-box li:hover {
+    background-color: #ddd;
+  }
+  
+  /* Controles del chatbot */
+  .chatbot-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Botón de micrófono */
+  .microphone-btn {
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 200px;
+  }
+  
+  .microphone-btn:hover {
+    background-color: #218838;
+  }
+  
+
+  /* Contenedor de la instrucción */
+.instruction-box {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    padding: 15px;
+  }
+  
+  /* Botón del micrófono */
+  .microphone-btn {
+    background-color: #ff9800; /* Color de fondo más llamativo */
+    border: none;
+    color: #fff;
+    padding: 20px 40px; /* Aumenté el tamaño del botón para que sea más visible */
+    border-radius: 50px;
+    font-size: 20px; /* Tamaño de fuente más grande */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para que resalte */
+    transition: 0.3s;
+    width: 220px;
+    margin-top: 30px; /* Margen superior para distanciarlo */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centra el botón */
+  }
+  
+  .microphone-btn:hover {
+    background-color: #f57c00; /* Color más oscuro al pasar el ratón */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  }
+  
