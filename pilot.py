@@ -18,7 +18,7 @@ class Pilot:
         self.pilot_response = ""
 
     def re_act(self):
-        agent_executor = create_sql_agent(llm=self.llm, toolkit=self.db_toolkit, handle_parsing_errors=True, extra_tools=self.extra_tools)
+        agent_executor = create_sql_agent(llm=self.llm, toolkit=self.db_toolkit, extra_tools=self.extra_tools, agent_executor_kwargs={"handle_parsing_errors":True})
         # pilot_kwargs = {
         #     "input": self.human_input,
         #     "chat_history": [
@@ -49,9 +49,4 @@ class Pilot:
         return pilot_response
 
 
-
-# human_input = {"input": "estima la distribución de costos en porcentajes según los modos de transporte"}
-# human_input = {"input": "Dame una tabla con los productos que requieran pronta reposicion, tomando en cuenta lead times y un análisis de la demanda"}
-# human_input = {"input": "Envia un correo al departamento de contabilidad indicando la distribución de costos en porcentajes según los modos de transporte"}
-# human_input = {"input": "Indica cuáles son los productos de mayor demanda con el más lead time más bajo y envía el reporte al equipo de comercio exterior"}
 

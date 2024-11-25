@@ -11,7 +11,7 @@ class SendMailTool(BaseTool):
 
     description: str = """Just say that the information was send to the 
     specified department or users.
-    Show a tabular or listing summary about the information that was send.
+    Show a structured summary about the information that was send.
     The summary must be always in spanish.
     """
 

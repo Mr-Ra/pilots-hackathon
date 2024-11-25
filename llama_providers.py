@@ -20,7 +20,7 @@ SAMBANOVA_BASE_URL = "https://api.sambanova.ai/v1"
 aiml_llm = ChatOpenAI(api_key=AI_ML_API_KEY, base_url=AI_ML_BASE_URL, model="meta-llama/Llama-3.2-3B-Instruct-Turbo")
     
 #sambanova api
-sambanova_llm = ChatOpenAI(api_key=SAMBANOVA_API_KEY, base_url=SAMBANOVA_BASE_URL, model="Meta-Llama-3.1-70B-Instruct", )
+sambanova_llm = ChatOpenAI(api_key=SAMBANOVA_API_KEY, base_url=SAMBANOVA_BASE_URL, model="Meta-Llama-3.1-70B-Instruct", max_retries=5)
 
 
 
